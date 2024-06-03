@@ -1,0 +1,64 @@
+.menu{
+
+    border-radius: 30px;
+    box-shadow:inset gray 0px 0px 3px 0px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 40px; */
+    position: fixed;
+    right:3vw; 
+    top:3vh;
+    z-index:4;
+    transition-duration: 0.3s;
+    background-color: #181922a6;
+    backdrop-filter: blur(10px);
+  }
+  /* .menu:hover{
+      height: 220px;
+      border-radius: 4px;
+  } */
+  /* .menu:hover .item:first-child svg{
+      transform: rotate(180deg);
+  } */
+  .menu .item{
+  transition-duration: 0.3s;
+  padding: 5px;
+  width:88%;
+  height:30px;
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  overflow: inherit;
+  padding: 10px;
+  }
+  .menu .item span{
+      padding:5px;
+      border-radius: 30px;
+      color:#fff5b1;
+      background-color: #181922a6;
+      width: fit-content;
+      backdrop-filter: blur(10px);
+      position: absolute;
+      bottom: -30px;
+      right:0;
+      left: 0;
+      opacity: 0;
+      transition-duration: 0.3s;
+      padding: 10px;
+  }
+  .menu .item:hover span{
+    opacity: 1;
+  }
+  .menu .item a{
+  text-decoration:none;
+  color:#fff5b1;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .menu .item a svg{
+  width:20px;
+  height:20px;
+  }

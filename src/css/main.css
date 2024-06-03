@@ -1,0 +1,155 @@
+.cartholder{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap:wrap;
+    padding:10px;
+    position: relative;
+    /* backdrop-filter: blur(10px); */
+    border-radius: 20px;
+    /* background-color: rgba(255, 255, 255, 0.342); */
+    /* box-shadow: white 0px 0px 5px 0px; */
+    padding:20px;
+}
+.bgr{
+    position: absolute;
+    z-index: 0;
+    width:50%;
+    height: 100vh;
+    background-color: #fff5de;
+    left:-25%;
+    border-radius: 100%;
+    transition-duration: 0.5s;
+}
+.bgl{
+    position: absolute;
+    z-index:0;
+    width:500px;
+    height: 500px;
+    background-color: #763497;
+    right:-20%;
+    top:0;
+    border-radius: 100%;
+    transition-duration: 0.3s;
+}
+.cartsboxes{
+    padding: 30px;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.cartsboxes:hover .bgl{
+    right:-18%;
+}
+
+
+.cartsboxes:hover .bgr{
+    left:-20%;
+}
+.title span{
+    width:50px;
+    height: 5px;
+    border-radius: 30px;
+    background-color: #763497;
+    margin: 10px;
+    transition-duration: 0.3s;
+}
+.title:hover span{
+    width:30px;
+}
+
+
+
+.explain{
+    width:100%;
+    /* height: 500vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemex{
+    width: 80%;
+    height: 70vh;
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.logobox{
+    width:50%;
+    position: sticky;
+    top:20px;
+    left:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    width:50%;
+    position: relative;
+}
+.itemex .logobox .logo{
+    width:200px;
+    height:200px;
+    border-radius: 100%;
+    
+    background-color: #fdea2e;
+}
+.itemex .logobox .logo img{
+    width:100%;
+    height: 100%;
+    border-radius: 100%;
+}
+.titlebox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titlebox p{
+    text-align: center;
+    width:70%;
+}
+.text p{
+    padding-top: 50px;
+}
+
+.text button{
+    width:90px;
+    height: 40px;
+    background-color: #e7c0ff;
+    border:none;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: #e7c0ff 0px 0px 5px 0px;
+    cursor: pointer;
+    color: white;
+    font-weight: bolder;
+    position: absolute;
+    right: 30px;
+    bottom: -141px;
+    transition-duration: 0.3s;
+
+}
+.text button:hover{
+    box-shadow: #d48eff 0px 0px 50px 0px;
+
+}
+
+.waterdiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    margin-top: 300px;
+    margin-bottom: 300px;
+}
+
+
+.waterdiv h1{
+    padding-left: 40px;
+}

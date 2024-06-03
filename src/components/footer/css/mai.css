@@ -1,0 +1,57 @@
+
+.water {
+cursor: pointer;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #80c5de;
+  /* box-shadow: inset 0 0 50px #1c637c; */
+  /* clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%); */
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.water::before {
+  content: "";
+  width: 200%;
+  height: 200%;
+  background-color: #ececec;
+  position: absolute;
+  top: -150%;
+  left: -50%;
+  border-radius: 40%;
+  animation: anim 12s linear infinite;
+  transition-duration: 0.3s;
+
+}
+
+.water::after {
+  content: "";
+  width: 204%;
+  height: 204%;
+  background-color: #ececec80;
+  position: absolute;
+  top: -150%;
+  left: -52%;
+  border-radius: 40%;
+  animation: anim 12s linear infinite;
+  animation-delay: 0.5s;
+  transition-duration: 0.3s;
+}
+
+@keyframes anim {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.water:hover::after{
+    width: 140%;
+    height: 140%;
+}
+.water:hover::before{
+    width: 140%;
+    height: 140%;
+}

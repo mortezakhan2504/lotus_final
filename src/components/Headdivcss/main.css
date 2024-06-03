@@ -1,0 +1,233 @@
+@keyframes mover {
+    from {
+        transform:translate(0);
+    }
+    to{
+        transform:translate(-1000px);
+    }
+}
+.headbox{
+    width:100%;
+    height:100vh;
+    display:flex;
+    position: relative;
+
+}
+.blackdiv{
+    overflow:hidden;
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-color: #fff5de;
+    z-index:2;
+}
+.pinkdiv{
+    overflow:hidden;
+    position: absolute;
+    z-index:3;
+    width:70%;
+    height:100%;
+    background-color: #763497;
+    transition-duration: 0.2s;
+}
+.pinkdiv h1{
+    position: absolute;
+    left:43vw;
+    top:44vh;
+    font-size:30px;
+    white-space: nowrap;
+   font-size:3vw;
+   cursor: default;
+   user-select:none;
+   color:#fff5de;
+}
+.blackdiv h1{
+   position: absolute;
+   left:43vw;
+   top:44vh;
+   color: #763497;
+   white-space: nowrap;
+   font-size:3vw;
+   cursor: default;
+   user-select:none;
+}
+
+.menu{
+
+  border-radius: 30px;
+  box-shadow:inset gray 0px 0px 3px 0px;
+  /* display:flex;
+  justify-content: center;
+  align-items: center; */
+  height: 40px;
+  overflow: hidden;
+  position: absolute;
+  right:3vw; 
+  top:3vh;
+  z-index:4;
+  transition-duration: 0.3s;
+  background-color: #763497;
+  backdrop-filter: blur(10px);
+}
+.menu:hover{
+    height: 220px;
+    border-radius: 4px;
+}
+.menu:hover .item:first-child svg{
+    transform: rotate(180deg);
+}
+.menu .item{
+transition-duration: 0.3s;
+padding: 5px;
+width:88%;
+height:30px;
+display:flex;
+justify-content: flex-end;
+align-items: center;
+/* position: relative; */
+overflow: inherit;
+}
+.menu .item span{
+    padding:5px;
+    border-radius: 30px;
+    color:#fff5de;
+    background-color: #763497;
+    backdrop-filter: blur(10px);
+    /* position: absolute; */
+    right:30px;
+    margin-right: 10px;
+}
+.menu .item a{
+text-decoration:none;
+color:#fff5de;
+display:flex;
+justify-content: center;
+align-items: center;
+}
+.menu .item a svg{
+width:20px;
+height:20px;
+}
+.pinkdiv .menubox{
+width:100vw;
+display:flex;
+justify-content: flex-end;
+align-items: flex-end;
+padding:9px;
+position: relative;  
+}
+.pinkdiv .menubox .menu{
+width:fit-content;
+}
+.pinkdiv .menubox .menu .item a{
+color:#fff5de;
+}
+
+.logo{
+    position: absolute;
+    left: 10px;
+    top:10px;
+    font-size: 3vw;
+    font-weight: bolder;
+    cursor: pointer;
+    user-select: none;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.pinkdiv  .logo{
+    color:#fff5de;
+}
+.blackdiv .logo{
+    color:#763497;
+}
+
+
+.itembox{
+    /* width:100vw; */
+    position: absolute;
+    bottom:0;
+    padding: 10px;
+    display: -webkit-inline-box;
+    overflow: hidden;
+    transition-duration: 0.3s;
+    animation-name: mover;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+}
+
+
+.itembox .item{
+    width:300px;
+    height: 290px;
+    border-radius: 20px;
+    margin: 2vw;
+}
+.blackdiv .itembox .item{
+    background-color:white;
+    box-shadow: gray 0px 0px 2px 0px;
+}
+.pinkdiv .itembox .item{
+    background-color:#222;
+    color:white;
+}
+.headitem{
+    width:100%;
+    height: 15%;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    box-shadow :inset gray 0px 0px 4px 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.itembox .body{
+    width:100%;
+    height: 70%;
+    overflow-y: hidden;
+}
+.itembox .body span{
+    padding:5px;
+}
+.itembox .link{
+    width:100%;
+    height: 15%;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    box-shadow:inset gray 0px 0px 4px 0px;
+}
+.pinkdiv .itembox .body{
+    background-color: rgb(48, 45, 45);
+}
+.blackdiv .itembox .body{
+    background-color:whitesmoke;
+}
+
+.profile{
+    width:30px;
+    height: 30px;
+    border-radius: 100%;
+    /* position: absolute; */
+    background-color: white;
+    border-color: black;
+    border-width: 2px;
+    border-style:solid;
+    margin-top:2px;
+}
+.headitem span{
+    padding-left: 5px;
+}
+.pinkdiv .headitem span{
+    color:white;
+}
+
+.itembox .body img{
+    width: 100%;
+    height: 100%;
+}
